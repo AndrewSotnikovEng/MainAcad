@@ -1,38 +1,34 @@
 package BL;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-
 /**
  * Created by andrew on 16.06.17.
+ * <p>
+ * Basic data structure for representing information about flight.
  */
 public class Flight {
 
     private String flight;
-    private String airport;
+    private String airportName;
     private String time;
     private char terminal;
     private String status;
-//    private TypeOfFlight typeOfFlight;
 
 
-    public Flight(String flight, String airport, String time, char terminal, String status) {
+    public Flight(String flight, String airportName, String time, char terminal, String status) {
 
         this.flight = flight;
-        this.airport = airport;
+        this.airportName = airportName;
         this.time = time;
         this.terminal = terminal;
         this.status = status;
-//        this.typeOfFlight = typeOfFlight;
     }
-
 
 
     @Override
     public String toString() {
         return "Flight{" +
                 "flight='" + flight + '\'' +
-                ", airport='" + airport + '\'' +
+                ", airportName='" + airportName + '\'' +
                 ", time='" + time + '\'' +
                 ", terminal=" + terminal +
                 ", status='" + status + '\'' +
@@ -48,12 +44,12 @@ public class Flight {
         this.flight = flight;
     }
 
-    public String getAirport() {
-        return airport;
+    public String getAirportName() {
+        return airportName;
     }
 
-    public void setAirport(String airport) {
-        this.airport = airport;
+    public void setAirportName(String airportName) {
+        this.airportName = airportName;
     }
 
     public String getTime() {
