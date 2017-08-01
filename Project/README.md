@@ -40,8 +40,8 @@
 
         Way 2:
 
-        1. open terminal (cmd.exe for Windows or terminal for Linux)
-        2. Type absolute path to jar file, and run java like see below:
+        1. Open terminal (cmd.exe for Windows or terminal for Linux)
+        2. Type absolute path to jar file, and run java like shown below:
            
             java -jar "path_to_jar/SunriseAirport-1.0-SNAPSHOT-jar-with-dependencies.jar"
 
